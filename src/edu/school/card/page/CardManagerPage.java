@@ -993,9 +993,9 @@ public class CardManagerPage extends BaseFrame {
      * 开卡
      */
     private void createCardFirstRow() {
-//        startCardNoText = new TextField();
-//        startCardNoText.setBounds(10,420,160,30);
-//        startCardNoText.setFont(new Font("宋体",Font.BOLD,16));
+        startCardNoText = new TextField();
+        startCardNoText.setBounds(10,420,160,30);
+        startCardNoText.setFont(new Font("宋体",Font.BOLD,16));
 
         startCardPwdText = new TextField();
         startCardPwdText.setBounds(210,420,160,30);
@@ -1014,7 +1014,7 @@ public class CardManagerPage extends BaseFrame {
         startCardBtn.setFont(new Font("宋体",Font.BOLD,16));
         container.add(startCardBtn);
 
-//        container.add(startCardNoText);
+        container.add(startCardNoText);
         container.add(startCardPwdText);
         container.add(startCardYMoneyText);
         container.add(startCardUserText);
@@ -1060,7 +1060,7 @@ public class CardManagerPage extends BaseFrame {
         table.setRowHeight(30);
         table.getTableHeader().setFont(new Font("宋体",Font.BOLD,16));
         table.setFont(new Font("宋体",Font.BOLD,16));
-//        table.setEnabled(false);
+        table.setEnabled(false);
 
         JScrollPane panel = new JScrollPane();
         panel.setBorder(BorderFactory.createLineBorder(Color.GRAY,1));
